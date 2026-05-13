@@ -17,7 +17,7 @@
         <section>
             <nav>
                 <div class="nav__container">
-                    <img class="logo" src="assets/Library.svg" alt>
+                    <img class="logo" src="assets/Library.svg" alt="'">
                     <ul class="nav__links">
                         <li><a href="#" class="nav__link">Home</a></li>
                         <li><a href="#" class="nav__link">Contact</a></li>
@@ -61,6 +61,7 @@
                                 All <span class="purple">Books</span>
                             </h2>
                             <select id="filter">
+                                onchange="filterBooks(event)">
                                 <option value disabled selected>Sort</option>
                                 <option value="LOW_TO_HIGH">Price, Low to
                                     High</option>
@@ -70,31 +71,14 @@
 
                             </select>
                         </div>
-                        <div class="book">
-                            <figure class="book__img--wrapper">
-                                <img class="book__img"
-                                    src="assets/atomic habits.jpg" alt>
-                            </figure>
-                            <div class="book__title">
-                                Atomic Habits
-                            </div>
-                            <div class="book__ratings">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <div class="book__price">
-                                <span class="book__price--normal">$59.95</span>
-                                $14.95
-                            </div>
+                        <div class="books">
+                            <i class=" fas fa-spinner books__loading--
+                            spinner"></i>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
         <footer>
             <div class="container">
                 <div class="row row__column">
@@ -108,7 +92,7 @@
                         <a href="#" class="footer__link">Home</a>
                         <a class="footer__link no-cursor">About</a>
                         <a href="#features" class="footer__link">Books</a>
-                        <a class="footer__link no-cursor">Contact</a>
+                        <a class="footer__link no cursor">Contact</a>
                     </div>
                     <div class="footer__copyright">Copyright &copy; 2021
                         Library</div>
@@ -116,5 +100,4 @@
             </div>
         </footer>
     </body>
-
 </html>

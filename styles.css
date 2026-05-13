@@ -208,7 +208,7 @@ header {
 
   /* Added this after the tutorial to 
   show it over the wave on larger screens */
-  z-index: 100;
+  z-index: 50;
 }
 
 .container {
@@ -320,6 +320,9 @@ FEATURES
 .book {
   width: 25%;
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .book__img {
@@ -449,12 +452,17 @@ select {
 }
 
 .books__loading {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 60px;
   font-size: 60px;
   color: #7342d6;
+}
+
+.books__loading .books__loading--spinner {
+  display: none !important;
 }
 
 .fa-spinner {
